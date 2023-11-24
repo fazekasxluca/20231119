@@ -50,3 +50,4 @@ function dbSzamlalo(tomb1) {
     return db;
 }
 var eredmeny3 = console.log(dbSzamlalo(autokTomb));
+var asd;

@@ -98,3 +98,6 @@ function dbSzamlalo(tomb1:Auto[]): number
 
 
 var eredmeny3  = console.log(dbSzamlalo(autokTomb));
+
+
+var asd;
