@@ -47,7 +47,7 @@ var auto1: Auto ={
 }
 var auto2: Auto ={
 
-  gyarto:"Peudgeot", tipus:"D",hengurtart:900,benzinesE:true,   
+  gyarto:"Peudgeot", tipus:"D",hengurtart:900,benzinesE:false,   
 }
 var auto3: Auto ={
 
@@ -70,7 +70,7 @@ function minimumKeres(tomb:Auto[]): Auto
   {
       if(henrUrtartMin.hengurtart > tomb[i].hengurtart)
       {
-        henrUrtartMin.hengurtart = tomb[i].hengurtart;
+        henrUrtartMin = tomb[i];
       }
   }
 
@@ -78,7 +78,23 @@ function minimumKeres(tomb:Auto[]): Auto
 
 }
 
-
 var eredmeny2 = console.log(minimumKeres(autokTomb));
 
 
+function dbSzamlalo(tomb1:Auto[]): number
+{
+   var db = 0;
+
+   for(var i:number = 0; i < tomb1.length; i++)
+   {
+    if(tomb1[i].benzinesE)
+    {
+      db++;
+    }
+   }
+
+   return db;
+}
+
+
+var eredmeny3  = console.log(dbSzamlalo(autokTomb));
